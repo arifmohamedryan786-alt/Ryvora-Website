@@ -288,7 +288,6 @@ function initContactForm() {
   const messageInput = document.getElementById('contact-message');
   const nameError = document.getElementById('name-error');
   const messageError = document.getElementById('message-error');
-  const formStatus = document.getElementById('form-status');
 
   if (!form || !nameInput || !messageInput) return;
 
@@ -299,10 +298,6 @@ function initContactForm() {
     messageInput.removeAttribute('aria-invalid');
     nameInput.classList.remove('input-error');
     messageInput.classList.remove('input-error');
-    if (formStatus) {
-      formStatus.textContent = '';
-      formStatus.className = 'form-status';
-    }
   };
 
   // Real-time input cleanup
@@ -357,11 +352,6 @@ function initContactForm() {
     // Construct formatted WhatsApp message
     const formattedMessage = `Hello Arif, my name is ${name}.\n\n${message}\n\n(Sent via RYVORA Portfolio)`;
     const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE_NUMBER}?text=${encodeURIComponent(formattedMessage)}`;
-
-    if (formStatus) {
-      formStatus.textContent = 'Opening WhatsApp to send your message...';
-      formStatus.className = 'form-status form-status-success';
-    }
 
     // Open WhatsApp in a new tab
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
