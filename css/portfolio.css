@@ -828,23 +828,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.125rem;
 }
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.footer-nav a {
-  font-size: 0.9375rem;
-  color: var(--color-text-muted);
-  transition: color var(--transition-default);
-}
-
-.footer-nav a:hover {
-  color: var(--color-primary);
-}
-
 .footer-copyright {
   font-size: 0.875rem;
   color: var(--color-text-subtle);
@@ -892,10 +875,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     justify-content: space-between;
     text-align: left;
-  }
-
-  .footer-nav {
-    justify-content: flex-end;
   }
 }
 
