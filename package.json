@@ -1,0 +1,11 @@
+{
+  "name": "ryvora",
+  "version": "1.0.0",
+  "description": "Developer portfolio for RYVORA - Founded by Arif Mohamed",
+  "author": "Arif Mohamed",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx serve -l 3000 ."
+  }
+}
+

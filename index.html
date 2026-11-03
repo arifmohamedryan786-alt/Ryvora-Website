@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RYVORA | Your Vision. Our Website. — Arif Mohamed</title>
+  <meta name="description" content="RYVORA is the developer portfolio of Arif Mohamed. Building clean, high-performance, and modern websites tailored to your vision.">
+  <meta name="author" content="Arif Mohamed">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+
+  <!-- Google Fonts: Space Grotesk & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="/css/portfolio.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      <a href="#home" class="brand-link" aria-label="RYVORA Home">
+        <img src="/assets/icons/favicon.svg" alt="RYVORA Logo" class="brand-logo" width="32" height="32">
+        <span class="brand-text">RYVORA</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="desktop-nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Call to Action Button -->
+      <div class="header-cta-desktop">
+        <a href="#contact" class="btn btn-primary btn-sm">Get in touch</a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="drawer-toggle" class="drawer-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Overlay -->
+  <div id="drawer-overlay" class="drawer-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Slide-in Drawer Menu -->
+  <aside id="mobile-drawer" class="mobile-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <a href="#home" class="brand-link" aria-label="RYVORA Home">
+        <img src="/assets/icons/favicon.svg" alt="RYVORA Logo" class="brand-logo" width="28" height="28">
+        <span class="brand-text">RYVORA</span>
+      </a>
+      <button id="drawer-close" class="drawer-close" type="button" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-drawer-nav" aria-label="Mobile Navigation Links">
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-block">Get in touch</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span>Your Vision. Our Website.</span>
+          </div>
+          <h1 class="hero-title">
+            Crafting High-Performance Websites for Your <span class="highlight">Vision</span>
+          </h1>
+          <p class="hero-description">
+            Founded by Arif Mohamed, RYVORA turns ambitious ideas into modern, lightning-fast, and accessible web experiences engineered to deliver real impact.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tagline">Portfolio</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Explore live applications and tools built with a commitment to simplicity, speed, and clean code.
+          </p>
+        </header>
+
+        <!-- Project cards rendered dynamically by JavaScript -->
+        <div id="projects-grid" class="projects-grid" aria-live="polite">
+          <!-- Populated by js/portfolio-app.js from js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tagline">Background</span>
+          <h2 class="section-title">About RYVORA</h2>
+          <p class="section-subtitle">
+            Dedicated to creating purposeful digital products with solid engineering fundamentals.
+          </p>
+        </header>
+
+        <div class="about-card">
+          <div class="about-intro-block">
+            <span class="about-founder-tag">Founder &amp; Developer</span>
+            <h3 class="about-founder-name">Arif Mohamed</h3>
+            <p class="about-bio">
+              I am Arif Mohamed, the founder and developer behind RYVORA. I specialize in building responsive, ultra-fast, and accessible websites from the ground up using pure modern standards. Every project is approached with meticulous attention to clean architecture, intuitive user interface design, and high performance.
+            </p>
+          </div>
+
+          <div class="skills-wrapper">
+            <h4 class="skills-heading">Technical Skills &amp; Capabilities</h4>
+            <ul class="skills-grid" aria-label="List of technical skills">
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Semantic HTML5</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Modern CSS3 &amp; Flexbox/Grid</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Vanilla JavaScript (ES6+)</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Responsive Web Design</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Web Accessibility (WCAG / a11y)</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Front-End Performance</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Git &amp; GitHub Version Control</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Static Site Deployment (Vercel)</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>Cross-Browser Compatibility</span>
+              </li>
+              <li class="skill-pill">
+                <span class="skill-dot" aria-hidden="true"></span>
+                <span>UI/UX Design Systems</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tagline">Direct Communication</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Have a project in mind or want to collaborate? Fill out the details below to chat directly with Arif on WhatsApp.
+          </p>
+        </header>
+
+        <div class="contact-container">
+          <div class="contact-card">
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Your Name <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="form-input"
+                  placeholder="e.g. John Doe"
+                  required
+                  aria-required="true"
+                  aria-describedby="name-error"
+                  autocomplete="name"
+                >
+                <div id="name-error" class="form-error" role="alert" aria-live="assertive"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">
+                  Your Message <span class="required-asterisk" aria-hidden="true">*</span>
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  class="form-textarea"
+                  rows="5"
+                  placeholder="Describe your vision, timeline, or requirements..."
+                  required
+                  aria-required="true"
+                  aria-describedby="message-error"
+                ></textarea>
+                <div id="message-error" class="form-error" role="alert" aria-live="assertive"></div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Start WhatsApp Chat</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path d="M12.031 2C6.496 2 2 6.494 2 12.029c0 1.997.585 3.86 1.6 5.43L2 22l4.71-1.55a9.99 9.99 0 005.321 1.579c5.536 0 10.031-4.495 10.031-10.03C22.062 6.495 17.567 2 12.031 2zm5.82 14.288c-.244.685-1.42 1.309-1.97 1.38-.507.065-1.168.093-1.89-.138-.439-.14-1.002-.326-1.73-.642-3.053-1.325-5.048-4.417-5.2-4.622-.153-.204-1.246-1.658-1.246-3.163 0-1.505.786-2.247 1.066-2.553.28-.305.61-.381.814-.381.203 0 .407.002.584.01.19.01.442-.072.69.526.255.612.868 2.122.946 2.275.077.153.128.332.026.536-.102.203-.153.33-.306.508-.152.179-.32.399-.458.536-.153.153-.312.32-.134.626.178.306.792 1.307 1.7 2.115 1.168 1.04 2.152 1.363 2.457 1.516.306.153.484.128.662-.077.178-.204.764-.891.968-1.196.203-.306.407-.255.686-.153.28.102 1.78.84 2.086.993.305.153.508.23.585.357.076.127.076.737-.168 1.422z"/>
+                </svg>
+              </button>
+
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+              <p class="whatsapp-note">Clicking will open WhatsApp to send your message directly to +91 85250 39751.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="/assets/icons/favicon.svg" alt="RYVORA Logo" width="24" height="24">
+        <span>RYVORA</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-copyright">
+        <p>&copy; 2025 RYVORA. Founded by Arif Mohamed. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Module Script -->
+  <script type="module" src="/js/portfolio-app.js"></script>
+</body>
+</html>
+
